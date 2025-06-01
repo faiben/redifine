@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefining Entertainment | Ethical Islamic Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .scroll-down {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-mosque text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-blue-600">EthicalMedia</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Projects</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Home</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Projects</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">About</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-20 md:pt-32 md:pb-28 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">Redefining Entertainment</h1>
+                    <h2 class="text-xl md:text-2xl font-medium mb-6">Entertain, Inspire, and Enlighten with Ethics</h2>
+                    <p class="text-lg mb-8 opacity-90">Welcome to a new era of entertainment—where every story, platform, and experience is crafted with the highest ethical standards and a commitment to authentic representation.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#projects" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium text-center transition duration-300">Explore Projects</a>
+                        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-lg font-medium text-center transition duration-300">Contact Us</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                        <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div class="absolute top-20 -right-4 w-32 h-32 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+                        <div class="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Islamic Media" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-16 scroll-down">
+            <a href="#projects" class="text-white">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Vision</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore our groundbreaking projects, each designed to uplift, educate, and unite the global Muslim community through innovative media and immersive experiences. We're committed to creating content that aligns with Islamic values while pushing the boundaries of creativity and technology.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-star text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ethical Standards</h3>
+                    <p class="text-gray-600">All our content adheres to the highest Islamic ethical guidelines, ensuring halal entertainment for the whole family.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-globe text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Global Representation</h3>
+                    <p class="text-gray-600">We showcase the diversity of the Muslim world through authentic stories and characters.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-lightbulb text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Innovative Technology</h3>
+                    <p class="text-gray-600">Utilizing cutting-edge technology to create immersive experiences that educate and inspire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover our innovative platforms that are transforming Islamic entertainment worldwide.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-film text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Islamic Film Academy</h3>
+                        <p class="text-gray-600 mb-4">Reshaping Film Narratives Through Islamic Wisdom. Islanema addresses the urgent need for authentic Muslim representation and spiritually-grounded storytelling in global media. Discover a world where film is a force for good.</p>
+                        <a href="https://islanema.com" target="_blank" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                            Learn More
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Islamic Filmmakers App</h3>
+                        <p class="text-gray-600 mb-4">Empowering Muslim Filmmakers Worldwide. A dedicated platform where Islamic filmmakers can showcase their work, monetize their creativity, and connect with peers—all while maintaining full compliance with Islamic jurisprudence.</p>
+                        <a href="https://islanemapp.islanema.com" target="_blank" class="inline-flex items-center text-green-600 font-medium hover:text-green-800">
+                            Discover
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 bg-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-landmark text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">The Golden Age – Cultural Theme Park</h3>
+                        <p class="text-gray-600 mb-4">Reviving the Past to Boost the Future. Step into an immersive journey through Islamic history and culture, brought to life with virtual reality, augmented reality, and holograms.</p>
+                        <a href="https://goldenage.islanema.com" target="_blank" class="inline-flex items-center text-yellow-600 font-medium hover:text-yellow-800">
+                            Experience
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 bg-purple-600 flex items-center justify-center">
+                        <i class="fas fa-globe-americas text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Unite Through Islamic Entertainment</h3>
+                        <p class="text-gray-600 mb-4">The World's First Comprehensive Islamic Entertainment Media Platform. A revolutionary platform combining Video on Demand, Virtual Reality, and Gaming to serve 1.8 billion Muslims worldwide.</p>
+                        <a href="https://islamiverse.islanema.com" target="_blank" class="inline-flex items-center text-purple-600 font-medium hover:text-purple-800">
+                            Join
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Join the Ethical Entertainment Revolution</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Join us in redefining entertainment—where every project is a step towards a more inspired, enlightened, and ethically engaged world.
+            </p>
+            <a href="#contact" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-medium text-lg transition duration-300">
+                Get Involved
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Have questions or want to collaborate? Reach out to us through the information below.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Email</h4>
+                                <a href="mailto:f.benhaida@emphasis.se" class="text-blue-600 hover:text-blue-800">f.benhaida@emphasis.se</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Phone</h4>
+                                <a href="tel:+46707300652" class="text-blue-600 hover:text-blue-800">+46 70 730 06 52</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Location</h4>
+                                <p class="text-gray-600">Sweden</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-lg font-medium text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mosque text-blue-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">EthicalMedia</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Redefining entertainment with ethical standards and authentic representation for the global Muslim community.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Projects</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://islanema.com" target="_blank" class="text-gray-400 hover:text-white transition duration-300">Islamic Film Academy</a></li>
+                        <li><a href="https://islanemapp.islanema.com" target="_blank" class="text-gray-400 hover:text-white transition duration-300">Filmmakers App</a></li>
+                        <li><a href="https://goldenage.islanema.com" target="_blank" class="text-gray-400 hover:text-white transition duration-300">The Golden Age</a></li>
+                        <li><a href="https://islamiverse.islanema.com" target="_blank" class="text-gray-400 hover:text-white transition duration-300">Islamic Entertainment</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to our newsletter for updates on our projects and initiatives.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2023 EthicalMedia. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Faibenmek/https-huggingface-co-faibenmek" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
